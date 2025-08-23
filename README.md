@@ -24,10 +24,10 @@
       - Copy these NS values.
   - Log in to your registrar (GoDaddy) → Find **DNS Management / Nameserver** Settings → Choose** Custom Nameservers** → Paste the **4 nameservers from Route 53** → Save/Update.
 
-Request/Validate SSL Certificate (Required for HTTPS)
-Go to AWS Certificate Manager (ACM).
-Request a public certificate for your custom domain (e.g., free-domain.shop or *.free-domain.shop).
-Important: Certificate must be created in us-east-1 (N. Virginia) for CloudFront.
+### 2. Request/Validate SSL Certificate (Required for HTTPS)
+ - Go to AWS Certificate Manager (ACM).
+ - Request a public certificate for your custom domain (e.g., free-domain.shop or *.free-domain.shop).
+ - **Important:** Certificate must be created in us-east-1 (N. Virginia) for CloudFront.
 
 DNS Validation (recommended): Add the provided CNAME record in Route 53.
 

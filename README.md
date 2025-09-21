@@ -52,3 +52,46 @@ Add website content in `/var/www/html/` directory.
 
 Copy **dns name** of ec2 and add it in the origin domain.
 
+## Screenshots
+
+### Created an S3 bucket to host static website files.
+![createBucket](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/1-createBucket.png)
+
+### Enabled static website hosting on the S3 bucket.
+![enableStaticWebsite](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/2-enableStaticWebsite.png)
+
+### Blocked public access settings for the S3 bucket.
+![blockPublicAccess](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/3-blockPublicAccess.png)
+
+### Created a Route 53 hosted zone for the domain.
+![createHostedZone](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/4-createHostedZone.png)
+
+### Updated domain’s nameservers with Route 53 NS records.
+![changeNS](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/5-changeNS.png)
+
+### Requested an ACM SSL certificate and added records in Route 53.
+![createACMCertificate](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/6-createACMCertificateAndAddRecordInHostedZone.png)
+
+### Created a CloudFront distribution for secure content delivery.
+![createCloudfrontDistribution](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/7-createCloudfrontDistribution.png)
+
+### Added an alternate domain (CNAME) to CloudFront.
+![addAlternateDOmain](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/8-addAlternateDOmain.png)
+
+### Set the default root object (index.html) in CloudFront.
+![addDefaultRootObject](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/9-addDefaultRootObject.png)
+
+### Edited the CloudFront origin to point to the S3 bucket.
+![editOrigin](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/10-editOrigin.png)
+
+### Applied an S3 bucket policy to allow only CloudFront access.
+![addBucketPolicy](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/11-addBucketPolicy.png)
+
+### Created a Route 53 record pointing the domain to CloudFront.
+![createRecordForCLoudfront](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/12-createRecordForCLoudfront.png)
+
+### Verified the final hosted zone configuration.
+![finalHostedZone](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/13-finalHostedZone.png)
+
+### Accessed the website using the custom domain secured with HTTPS.
+![website](https://github.com/Vaishnavi-M-Patil/Domain-Map-With-ACM/blob/main/ACM/14-website.png)
